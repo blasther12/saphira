@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Saphira.Application\Saphira.Application.csproj" />
+    <ProjectReference Include="..\Saphira.Domain\Saphira.Domain.csproj" />
+    <ProjectReference Include="..\Saphira.Infrastructure\Saphira.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
