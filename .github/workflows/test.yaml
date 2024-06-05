@@ -1,4 +1,4 @@
-name: Build ASP.Net Core app - plataformagastromotiva
+name: Build ASP.Net app
 
 on:
   push:
@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
-      run: dotnet test src\Saphira.Tests\Saphira.Tests.csproj /p:CollectCoverage=true
+      run: dotnet test src\\Saphira.Tests\\Saphira.Tests.csproj /p:CollectCoverage=true
